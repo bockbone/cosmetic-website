@@ -7,11 +7,11 @@ function Section({ title, brief, textButton, imagePath, flip }) {
     <div
       className={
         flip
-          ? "px-10 md:px-32 xl:px-96 flex flex-row-reverse justify-between items-center my-20"
-          : "px-10 md:px-32 xl:px-96 flex justify-between items-center my-20"
+          ? "px-10 py-20 md:py-0 md:px-32 2xl:px-80 md:flex md:flex-row-reverse md:justify-between md:items-center md:my-20"
+          : "px-10 py-20 md:py-0 md:px-32 2xl:px-80 md:flex md:justify-between md:items-center md:my-20"
       }
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col pb-10 md:pb-0">
         <h2 className="font-displaySecondary text-6xl mb-14">{title}</h2>
         <p className="font-body text-base max-w-xs mb-12">{brief}</p>
         <Button text={textButton} />
